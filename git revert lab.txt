@@ -1,0 +1,21 @@
+git revert lab
+
+$ cd /tmp/example
+$ git init
+Initialized empty Git repository in /tmp/example/.git/
+$ echo "Initial text" > README.md
+$ git add README.md
+$ git commit -m "initial commit"
+[master (root-commit) 3f7522e] initial commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+$ echo "bad update" > README.md 
+$ git commit -am "bad update"
+[master a1b9870] bad update
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+$ git revert HEAD
+[master 1db4eeb] Revert "bad update"
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+ $git log --oneline

@@ -1,0 +1,17 @@
+1) clone the git repo
+git clone https://github.com/amitopenwriteup/repojenkins.git
+
+cd repojenkins
+cat collections.json
+
+2)Install npm
+sudo apt-get install -y npm
+
+3)Install package: Install Newman
+
+sudo npm install -g newman@5.2.3
+sudo npm install -g commander@2.20.0
+
+4) Run the collection
+
+sudo newman run collections.json

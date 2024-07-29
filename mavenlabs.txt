@@ -1,0 +1,33 @@
+ubuntu vm
+
+1) Update the system repo
+
+sudo apt-get update -y 
+
+2) Install OpenJDK
+
+sudo apt-get install -y wget unzip openjdk-17-jdk
+
+
+3) install maven
+
+sudo apt-get install maven -y
+
+4) clone the git repo
+
+git clone https://github.com/hellokaton/java11-examples.git
+
+5)cd to that repo
+
+cd java11-examples
+
+6)Run the command
+
+mvn clean package
+
+7)Run some more command
+
+mvn test
+
+mvn compile
+
